@@ -1,0 +1,39 @@
+<%= render 'inscricao/confirm_modal' %>
+
+<h1 class="text-center mt-3">Nova Inscrição em Disciplina</h1>
+
+<div class="alert alert-danger">
+  A criação da solicitação falhou.
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <h4>Preencha o formulário</h4>
+  </div>
+  <div class="card-body">
+    <form>
+      <div class="form-row">
+        <div class="form-group col-lg-9">
+          <label for="disciplina">Disciplina</label>
+          <input type="text" class="form-control" id="dsciplina"
+                 placeholder="Insira o nome da disciplina" required>
+        </div>
+        <div class="form-group col-lg-3">
+          <label for="turmaCod">Turma</label>
+          <select class="form-control" id="turmaCod" required>
+            <option>Selecione sua turma</option>
+            <option>A1</option>
+            <option>B1</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-success">Solicitar</button>
+      <%= link_to 'Voltar', :back, class: 'btn btn-secondary' %>
+    </form>
+  </div>
+</div>
+
+<button type="button" class="btn btn-secondary mt-5" data-toggle="modal"
+        data-target="#confirmModal">
+  Modal confirmação
+</button>
