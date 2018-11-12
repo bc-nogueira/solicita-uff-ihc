@@ -61,7 +61,7 @@
             </div>
           </div>
           </th>
-          <th scope="col">Ações</th>
+          <th scope="col" class="col-3">Ações</th>
         </tr>
       </thead>
       <tbody>
@@ -71,10 +71,11 @@
           <td>2017.2</td>
           <td class="text-success">Aprovado</td>
           <td class="align-middle">
-            <div class="d-flex justify-content-around">
-              <%= link_to inscricao_show_path do %>
+            <div>
+              <%= link_to inscricao_show_path, class: 'btn btn-primary' do %>
                 <i class="fa fa-info-circle fa-lg" aria-hidden="true"
                    data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
+                Detalhes
               <% end %>
             </div>
           </td>
@@ -85,10 +86,11 @@
           <td>2018.1</td>
           <td class="text-danger">Reprovado</td>
           <td class="align-middle">
-            <div class="d-flex justify-content-around">
-              <%= link_to inscricao_show_path do %>
+            <div>
+              <%= link_to inscricao_show_path, class: 'btn btn-primary' do %>
                 <i class="fa fa-info-circle fa-lg" aria-hidden="true"
                    data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
+                Detalhes
               <% end %>
             </div>
           </td>
@@ -99,16 +101,16 @@
           <td>2018.2</td>
           <td class="text-warning">Pendente</td>
           <td class="align-middle">
-            <div class="d-flex justify-content-around">
-              <a href="#">
-                <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"
-                data-toggle="tooltip" data-placement="top" title="Editar"></i>
-              </a>
-              <%= link_to inscricao_show_path do %>
-                <i class="fa fa-info-circle fa-lg" aria-hidden="true"
-                     data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
-              <% end %>
-            </div>
+            <%= link_to inscricao_show_path, class: 'btn btn-primary' do %>
+              <i class="fa fa-info-circle fa-lg" aria-hidden="true"
+                   data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
+              Detalhes 
+            <% end %>
+            <a href="#" class="btn btn-danger">
+              <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"
+                data-toggle="tooltip" data-placement="top" title="Cancelar"></i>
+              Cancelar
+            </a>
           </td>
         </tr>
       </tbody>
