@@ -12,7 +12,8 @@
           Período de Ajuste
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Plano de Estudo</a>
+          <%= active_link_to 'Plano de Estudos', inscricao_plano_estudos_path,
+                      class: 'dropdown-item' %>
           <%= active_link_to 'Inscrição em Disciplina', inscricao_index_path,
                       class: 'dropdown-item' %>
           <a class="dropdown-item" href="#">Trocar de Turma</a>

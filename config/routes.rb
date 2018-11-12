@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'inscricao/index'
   get 'inscricao/new'
   get 'inscricao/show'
+  get 'inscricao/plano_estudos'
 end
