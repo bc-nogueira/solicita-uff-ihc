@@ -3,9 +3,7 @@
 <div class="card">
   <div class="card-header d-flex justify-content-between">
     <h4>Minhas Solicitações</h4>
-    <button class="btn btn-success">
-      Nova AC
-    </button>
+    <%= link_to 'Nova AC', ac_new_path, class: 'btn btn-success' %>
   </div>
   <div class="card-body">
     <div class="input-group mb-3 w-50 ml-auto">
@@ -86,8 +84,11 @@
         <td>10/10/2016</td>
         <td class="align-middle">
           <div class="d-flex justify-content-around">
-            <i class="fa fa-info-circle fa-lg" aria-hidden="true"
-               data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
+            <%= link_to ac_show_path, class: 'btn btn-primary' do %>
+              <i class="fa fa-info-circle fa-lg" aria-hidden="true"
+                 data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
+              Detalhes
+            <% end %>
           </div>
         </td>
       </tr>
@@ -99,10 +100,16 @@
         <td>--</td>
         <td class="align-middle">
           <div class="d-flex justify-content-around">
-            <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"
-               data-toggle="tooltip" data-placement="top" title="Editar"></i>
-            <i class="fa fa-info-circle fa-lg" aria-hidden="true"
-               data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
+            <%= link_to ac_show_path, class: 'btn btn-primary' do %>
+              <i class="fa fa-info-circle fa-lg" aria-hidden="true"
+                 data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
+              Detalhes
+            <% end %>
+            <a href="#" class="btn btn-secondary">
+              <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"
+                 data-toggle="tooltip" data-placement="top" title="Cancelar"></i>
+              Editar
+            </a>
           </div>
         </td>
       </tr>

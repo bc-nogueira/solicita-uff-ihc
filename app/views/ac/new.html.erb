@@ -1,0 +1,71 @@
+<%= render 'ac/confirm_modal' %>
+
+<h1 class="text-center mt-3">Nova Atividade Complementar</h1>
+
+<div class="alert alert-danger">
+  A criação da solicitação falhou.
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <h4>Preencha o formulário</h4>
+  </div>
+  <form>
+    <div class="card-body">
+      <div class="form-row">
+        <div class="form-group col-lg-12">
+          <label for="nomeAc">Nome</label>
+          <input type="text" id="nomeAc" class="form-control" required placeholder="Insira o nome da AC">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-lg-6">
+          <label for="tipoAc">Tipo</label>
+          <select class="form-control" id="tipoAc" required>
+            <option>Selecione o tipo</option>
+            <option>Curso</option>
+            <option>Estágio</option>
+            <option>Monitoria</option>
+          </select>
+        </div>
+        <div class="form-group col-lg-6">
+          <label for="chAC">CH Solicitada</label>
+          <input type="number" id="chAC" class="form-control" placeholder="Insira a CH solicitada">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-lg-6">
+          <label for="professorAC">Professor</label>
+          <input type="text" id="professorAC" class="form-control" placeholder="Insira o nome do professor responsável">
+        </div>
+        <div class="form-group col-lg-6">
+          <label for="localAC">Local da atividade (organização, empresa)</label>
+          <input type="text" id="localAC" class="form-control" placeholder="Insira o nome do local da atividade">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-lg-6">
+          <label for="inicioAC">Data de Início da Atividade (dd/mm/aaaa)</label>
+          <input type="date" id="inicioAC" class="form-control">
+        </div>
+        <div class="form-group col-lg-6">
+          <label for="fimAC">Data de Fim da Atividade (dd/mm/aaaa)</label>
+          <input type="date" id="fimAC" class="form-control">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-lg-12">
+          <label for="resumoAC">Resumo</label>
+          <textarea class="form-control" id="resumoAC" rows="3" placeholder="Faça um resumo da atividade"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer">
+      <button type="submit" class="btn btn-success"
+              data-toggle="modal" data-target="#confirmModalAC">
+        Solicitar
+      </button>
+      <%= link_to 'Voltar', :back, class: 'btn btn-secondary' %>
+    </div>
+  </form>
+</div>
