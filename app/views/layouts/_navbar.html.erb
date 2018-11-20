@@ -16,7 +16,8 @@
                       class: 'dropdown-item' %>
           <%= active_link_to 'Inscrição em Disciplina', inscricao_index_path,
                       class: 'dropdown-item' %>
-          <a class="dropdown-item" href="#">Trocar de Turma</a>
+          <%= active_link_to 'Troca de Turma', troca_turma_index_path,
+                             class: 'dropdown-item' %>
           <a class="dropdown-item" href="#">Cancelar Turma</a>
         </div>
       </li>

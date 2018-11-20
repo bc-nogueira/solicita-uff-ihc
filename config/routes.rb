@@ -13,4 +13,8 @@ Rails.application.routes.draw do
   get 'inscricao/new'
   get 'inscricao/show'
   get 'inscricao/plano_estudos'
+
+  get 'troca_turma/index'
+  get 'troca_turma/new'
+  get 'troca_turma/show'
 end
