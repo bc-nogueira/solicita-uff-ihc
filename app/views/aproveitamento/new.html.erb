@@ -1,0 +1,43 @@
+<%= render 'aproveitamento/confirm_modal' %>
+
+<h1 class="text-center mt-3">Novo Aproveitamento de Disciplina</h1>
+
+<div class="alert alert-danger">
+  A criação da solicitação falhou.
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <h4>Preencha o formulário</h4>
+  </div>
+  <form onsubmit="return false;">
+    <div class="card-body">
+      <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <strong>Dica!</strong> Selecione a dica que você deseja aproveitar de cursos anteriores.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-lg-12">
+          <label for="discAproveitamento">Disciplina</label>
+          <select class="form-control" id="discAproveitamento" required>
+            <option>Selecione a disciplina</option>
+            <option>Programação I</option>
+            <option>Programação II</option>
+            <option>Redes I</option>
+            <option>Redes II</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer">
+      <button type="submit" class="btn btn-success"
+              data-toggle="modal" data-target="#confirmModalAproveitamento">
+        Solicitar
+      </button>
+      <%= link_to 'Voltar', :back, class: 'btn btn-secondary' %>
+    </div>
+  </form>
+</div>
