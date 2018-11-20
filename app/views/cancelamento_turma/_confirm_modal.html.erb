@@ -1,0 +1,22 @@
+<div class="modal fade" id="confirmModalCancelamentoTurma" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">
+          Confirmar nova solicitação
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Você realmente deseja realizar essa solicitação?</p>
+      </div>
+      <div class="modal-footer">
+        <%= link_to 'Sim', cancelamento_turma_show_path, class: 'w-25 btn btn-success' %>
+        <button type="button" class="w-25 btn btn-danger" data-dismiss="modal">Não</button>
+      </div>
+    </div>
+  </div>
+</div>

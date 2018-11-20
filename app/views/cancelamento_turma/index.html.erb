@@ -1,0 +1,106 @@
+<h1 class="mt-3">Cancelamento de Turma</h1>
+
+<div class="card">
+  <div class="card-header d-flex justify-content-between">
+    <h4>Minhas Solicitações</h4>
+    <%= link_to 'Novo Cancelamento', cancelamento_turma_new_path, class: 'btn btn-success' %>
+  </div>
+  <div class="card-body">
+    <div class="input-group mb-3 w-50 ml-auto">
+      <input type="text" class="form-control" aria-label="Pesquisar"
+             aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button">Pesquisar</button>
+      </div>
+    </div>
+
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th scope="col">
+          <div class="d-flex">
+              <span class="d-flex flex-column justify-content-center">
+                Disciplina
+              </span>
+            <div class="ml-2 d-flex flex-column">
+              <i class="fa fa-angle-up" aria-hidden="true"></i>
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+          </div>
+        </th>
+        <th scope="col">
+          <div class="d-flex">
+              <span class="d-flex flex-column justify-content-center">
+                Turma
+              </span>
+            <div class="ml-2 d-flex flex-column">
+              <i class="fa fa-angle-up" aria-hidden="true"></i>
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+          </div>
+        </th>
+        <th scope="col">
+          <div class="d-flex">
+              <span class="d-flex flex-column justify-content-center">
+                Período
+              </span>
+            <div class="ml-2 d-flex flex-column">
+              <i class="fa fa-angle-up" aria-hidden="true"></i>
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+          </div>
+        </th>
+        <th scope="col">
+          <div class="d-flex">
+              <span class="d-flex flex-column justify-content-center">
+                Status
+              </span>
+            <div class="ml-2 d-flex flex-column">
+              <i class="fa fa-angle-up" aria-hidden="true"></i>
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+          </div>
+        </th>
+        <th scope="col">Ações</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Estrutura de Dados</td>
+        <td>A1</td>
+        <td>2018.1</td>
+        <td class="text-success">Aprovada</td>
+        <td class="align-middle">
+          <div class="d-flex justify-content-around">
+            <%= link_to cancelamento_turma_show_path, class: 'btn btn-primary' do %>
+              <i class="fa fa-info-circle fa-lg" aria-hidden="true"
+                 data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
+              Detalhes
+            <% end %>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>IHC</td>
+        <td>B1</td>
+        <td>2018.2</td>
+        <td class="text-warning">Pendente</td>
+        <td class="align-middle">
+          <div class="d-flex justify-content-around">
+            <%= link_to cancelamento_turma_show_path, class: 'btn btn-primary' do %>
+              <i class="fa fa-info-circle fa-lg" aria-hidden="true"
+                 data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
+              Detalhes
+            <% end %>
+            <a href="#" class="btn btn-danger">
+              <i class="fa fa-ban fa-lg" aria-hidden="true"
+                 data-toggle="tooltip" data-placement="top" title="Cancelar"></i>
+              Cancelar
+            </a>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

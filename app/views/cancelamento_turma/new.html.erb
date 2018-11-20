@@ -1,0 +1,41 @@
+<%= render 'cancelamento_turma/confirm_modal' %>
+
+<h1 class="text-center mt-3">Novo Cancelamento de Turma</h1>
+
+<div class="alert alert-danger">
+  A criação da solicitação falhou.
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <h4>Preencha o formulário</h4>
+  </div>
+  <form onsubmit="return false;">
+    <div class="card-body">
+      <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <strong>Dica!</strong> Selecione a turma que você deseja cancelar.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-lg-12">
+          <label for="turmaAtualTroca">Turma</label>
+          <select class="form-control" id="turmaAtualTroca" required>
+            <option>Selecione a turma</option>
+            <option>IHC - A1</option>
+            <option>Qualidade e Teste - B1</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer">
+      <button type="submit" class="btn btn-success"
+              data-toggle="modal" data-target="#confirmModalCancelamentoTurma">
+        Solicitar
+      </button>
+      <%= link_to 'Voltar', :back, class: 'btn btn-secondary' %>
+    </div>
+  </form>
+</div>

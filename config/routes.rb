@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   get 'aproveitamento/new'
   get 'aproveitamento/show'
 
+  get 'cancelamento_turma/index'
+  get 'cancelamento_turma/new'
+  get 'cancelamento_turma/show'
+
   get 'inscricao/index'
   get 'inscricao/new'
   get 'inscricao/show'
