@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root to: 'home#index'
 
+  get 'home/login'
+
   get 'ac/index'
   get 'ac/new'
   get 'ac/show'

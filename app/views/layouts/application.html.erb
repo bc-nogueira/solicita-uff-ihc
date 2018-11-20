@@ -10,7 +10,9 @@
   </head>
 
   <body>
-    <%= render 'layouts/navbar' %>
+    <% unless @login_page %>
+      <%= render 'layouts/navbar' %>
+    <% end %>
     <div class="container">
       <%= yield %>
     </div>

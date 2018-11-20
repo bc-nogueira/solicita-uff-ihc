@@ -1,0 +1,21 @@
+<div class="card w-50 mt-5 mx-auto">
+  <div class="card-header">
+    <h4 class="mb-0">Entrar no Solicita UFF</h4>
+  </div>
+  <form>
+    <div class="card-body">
+      <div class="form-group">
+        <label for="matriculaLogin">Matrícula</label>
+        <input type="text" class="form-control" id="matriculaLogin" placeholder="Insira sua matrícula">
+      </div>
+
+      <div class="form-group">
+        <label for="senhaLogin">Senha</label>
+        <input type="password" class="form-control" id="senhaLogin" placeholder="Insira sua senha">
+      </div>
+    </div>
+    <div class="card-footer">
+      <%= link_to 'Entrar', root_path, class: 'btn btn-success' %>
+    </div>
+  </form>
+</div>
