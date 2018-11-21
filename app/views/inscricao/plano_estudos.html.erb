@@ -4,7 +4,7 @@
   <div class="card-header">
     <div class="d-flex justify-content-between">
       <h4>Período: 2018.2</h4>
-      <button class="btn btn-success">Nova Inscrição</button>
+      <%= link_to 'Nova Inscrição', inscricao_new_path, class: 'btn btn-success' %>
     </div>
   </div>
   <div class="card-body">
@@ -22,8 +22,8 @@
             <td>A1</td>
             <td>
                 <div>
-                    <button class="btn btn-primary">Editar</button>
-                    <button class="btn btn-danger">Cancelar</button>
+                  <%= link_to 'Trocar Turma', troca_turma_new_path, class: 'btn btn-primary' %>
+                  <%= link_to 'Cancelar', cancelamento_turma_index_path, class: 'btn btn-danger' %>
                 </div>
             </td>
           </tr>
@@ -32,8 +32,8 @@
             <td>A1</td>
             <td>
                 <div>
-                    <button class="btn btn-primary">Editar</button>
-                    <button class="btn btn-danger">Cancelar</button>
+                  <%= link_to 'Trocar Turma', troca_turma_new_path, class: 'btn btn-primary' %>
+                  <%= link_to 'Cancelar', cancelamento_turma_index_path, class: 'btn btn-danger' %>
                 </div>
             </td>
           </tr>
