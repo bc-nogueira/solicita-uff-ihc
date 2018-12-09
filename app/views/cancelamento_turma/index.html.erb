@@ -66,13 +66,13 @@
       </thead>
       <tbody>
       <tr>
-        <td>Estrutura de Dados</td>
-        <td>A1</td>
-        <td>2018.1</td>
-        <td class="text-success">Aprovada</td>
-        <td class="align-middle">
-          <div class="d-flex justify-content-around">
-            <%= link_to cancelamento_turma_show_path, class: 'btn btn-primary' do %>
+        <td class="align-middle">Estrutura de Dados</td>
+        <td class="align-middle">A1</td>
+        <td class="align-middle">2018.1</td>
+        <td class="align-middle text-success">Aprovada</td>
+        <td>
+          <div class="d-flex flex-column align-items-center">
+            <%= link_to cancelamento_turma_show_path, class: 'btn btn-primary w-100' do %>
               <i class="fa fa-info-circle fa-lg" aria-hidden="true"
                  data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
               Detalhes
@@ -81,18 +81,18 @@
         </td>
       </tr>
       <tr>
-        <td>IHC</td>
-        <td>B1</td>
-        <td>2018.2</td>
-        <td class="text-warning">Pendente</td>
-        <td class="align-middle">
-          <div class="d-flex justify-content-around">
-            <%= link_to cancelamento_turma_show_path, class: 'btn btn-primary' do %>
+        <td class="align-middle">IHC</td>
+        <td class="align-middle">B1</td>
+        <td class="align-middle">2018.2</td>
+        <td class="align-middle text-warning">Pendente</td>
+        <td>
+          <div class="d-flex flex-column align-items-center">
+            <%= link_to cancelamento_turma_show_path, class: 'btn btn-primary w-100' do %>
               <i class="fa fa-info-circle fa-lg" aria-hidden="true"
                  data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
               Detalhes
             <% end %>
-            <a href="#" class="btn btn-danger">
+            <a href="#" class="btn btn-danger w-100 mt-2">
               <i class="fa fa-ban fa-lg" aria-hidden="true"
                  data-toggle="tooltip" data-placement="top" title="Cancelar"></i>
               Cancelar

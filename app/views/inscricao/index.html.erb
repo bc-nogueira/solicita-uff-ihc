@@ -66,13 +66,13 @@
       </thead>
       <tbody>
         <tr>
-          <td>Programação I</td>
-          <td>A1</td>
-          <td>2017.2</td>
-          <td class="text-success">Aprovado</td>
-          <td class="align-middle">
-            <div>
-              <%= link_to inscricao_show_path, class: 'btn btn-primary' do %>
+          <td class="align-middle">Programação I</td>
+          <td class="align-middle">A1</td>
+          <td class="align-middle">2017.2</td>
+          <td class="align-middle text-success">Aprovado</td>
+          <td>
+            <div class="d-flex flex-column align-items-center">
+              <%= link_to inscricao_show_path, class: 'btn btn-primary w-100' do %>
                 <i class="fa fa-info-circle fa-lg" aria-hidden="true"
                    data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
                 Detalhes
@@ -81,13 +81,13 @@
           </td>
         </tr>
         <tr>
-          <td>Programação II</td>
-          <td>B1</td>
-          <td>2018.1</td>
-          <td class="text-danger">Reprovado</td>
-          <td class="align-middle">
-            <div>
-              <%= link_to inscricao_show_path, class: 'btn btn-primary' do %>
+          <td class="align-middle">Programação II</td>
+          <td class="align-middle">B1</td>
+          <td class="align-middle">2018.1</td>
+          <td class="align-middle text-danger">Reprovado</td>
+          <td>
+            <div class="d-flex flex-column align-items-center">
+              <%= link_to inscricao_show_path, class: 'btn btn-primary w-100' do %>
                 <i class="fa fa-info-circle fa-lg" aria-hidden="true"
                    data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
                 Detalhes
@@ -96,17 +96,17 @@
           </td>
         </tr>
         <tr>
-          <td>Redes I</td>
-          <td>C1</td>
-          <td>2018.2</td>
-          <td class="text-warning">Pendente</td>
-          <td class="align-middle">
-            <%= link_to inscricao_show_path, class: 'btn btn-primary' do %>
+          <td class="align-middle">Redes I</td>
+          <td class="align-middle">C1</td>
+          <td class="align-middle">2018.2</td>
+          <td class="align-middle text-warning">Pendente</td>
+          <td>
+            <%= link_to inscricao_show_path, class: 'btn btn-primary w-100' do %>
               <i class="fa fa-info-circle fa-lg" aria-hidden="true"
                    data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
               Detalhes 
             <% end %>
-            <a href="#" class="btn btn-danger">
+            <a href="#" class="btn btn-danger w-100 mt-2">
               <i class="fa fa-ban fa-lg" aria-hidden="true"
                 data-toggle="tooltip" data-placement="top" title="Cancelar"></i>
               Cancelar

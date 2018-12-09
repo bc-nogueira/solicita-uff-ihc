@@ -16,103 +16,103 @@
 
     <table class="table table-bordered">
       <thead>
-      <tr>
-        <th scope="col">
-          <div class="d-flex">
-              <span class="d-flex flex-column justify-content-center">
-                Disciplina
-              </span>
-            <div class="ml-2 d-flex flex-column">
-              <i class="fa fa-angle-up" aria-hidden="true"></i>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
+        <tr>
+          <th scope="col">
+            <div class="d-flex">
+                <span class="d-flex flex-column justify-content-center">
+                  Disciplina
+                </span>
+              <div class="ml-2 d-flex flex-column">
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </div>
             </div>
-          </div>
-        </th>
-        <th scope="col">
-          <div class="d-flex">
-              <span class="d-flex flex-column justify-content-center">
-                Turma Antiga
-              </span>
-            <div class="ml-2 d-flex flex-column">
-              <i class="fa fa-angle-up" aria-hidden="true"></i>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </th>
+          <th scope="col">
+            <div class="d-flex">
+                <span class="d-flex flex-column justify-content-center">
+                  Turma Antiga
+                </span>
+              <div class="ml-2 d-flex flex-column">
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </div>
             </div>
-          </div>
-        </th>
-        <th scope="col">
-          <div class="d-flex">
-              <span class="d-flex flex-column justify-content-center">
-                Nova Turma
-              </span>
-            <div class="ml-2 d-flex flex-column">
-              <i class="fa fa-angle-up" aria-hidden="true"></i>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </th>
+          <th scope="col">
+            <div class="d-flex">
+                <span class="d-flex flex-column justify-content-center">
+                  Nova Turma
+                </span>
+              <div class="ml-2 d-flex flex-column">
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </div>
             </div>
-          </div>
-        </th>
-        <th scope="col">
-          <div class="d-flex">
-              <span class="d-flex flex-column justify-content-center">
-                Período
-              </span>
-            <div class="ml-2 d-flex flex-column">
-              <i class="fa fa-angle-up" aria-hidden="true"></i>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </th>
+          <th scope="col">
+            <div class="d-flex">
+                <span class="d-flex flex-column justify-content-center">
+                  Período
+                </span>
+              <div class="ml-2 d-flex flex-column">
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </div>
             </div>
-          </div>
-        </th>
-        <th scope="col">
-          <div class="d-flex">
-              <span class="d-flex flex-column justify-content-center">
-                Status
-              </span>
-            <div class="ml-2 d-flex flex-column">
-              <i class="fa fa-angle-up" aria-hidden="true"></i>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </th>
+          <th scope="col">
+            <div class="d-flex">
+                <span class="d-flex flex-column justify-content-center">
+                  Status
+                </span>
+              <div class="ml-2 d-flex flex-column">
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </div>
             </div>
-          </div>
-        </th>
-        <th scope="col">Ações</th>
-      </tr>
+          </th>
+          <th scope="col">Ações</th>
+        </tr>
       </thead>
       <tbody>
-      <tr>
-        <td>Estrutura de Dados</td>
-        <td>A1</td>
-        <td>B1</td>
-        <td>2018.1</td>
-        <td class="text-success">Aprovada</td>
-        <td class="align-middle">
-          <div class="d-flex justify-content-around">
-            <%= link_to troca_turma_show_path, class: 'btn btn-primary' do %>
-              <i class="fa fa-info-circle fa-lg" aria-hidden="true"
-                 data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
-              Detalhes
-            <% end %>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>IHC</td>
-        <td>A1</td>
-        <td>B1</td>
-        <td>2018.2</td>
-        <td class="text-warning">Pendente</td>
-        <td class="align-middle">
-          <div class="d-flex justify-content-around">
-            <%= link_to troca_turma_show_path, class: 'btn btn-primary' do %>
-              <i class="fa fa-info-circle fa-lg" aria-hidden="true"
-                 data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
-              Detalhes
-            <% end %>
-            <a href="#" class="btn btn-danger">
-              <i class="fa fa-ban fa-lg" aria-hidden="true"
-                 data-toggle="tooltip" data-placement="top" title="Cancelar"></i>
-              Cancelar
-            </a>
-          </div>
-        </td>
-      </tr>
+        <tr>
+          <td class="align-middle">Estrutura de Dados</td>
+          <td class="align-middle">A1</td>
+          <td class="align-middle">B1</td>
+          <td class="align-middle">2018.1</td>
+          <td class="align-middle text-success">Aprovada</td>
+          <td>
+            <div class="d-flex flex-column align-items-center">
+              <%= link_to troca_turma_show_path, class: 'btn btn-primary w-100' do %>
+                <i class="fa fa-info-circle fa-lg" aria-hidden="true"
+                   data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
+                Detalhes
+              <% end %>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="align-middle">IHC</td>
+          <td class="align-middle">A1</td>
+          <td class="align-middle">B1</td>
+          <td class="align-middle">2018.2</td>
+          <td class="align-middle text-warning">Pendente</td>
+          <td>
+            <div class="d-flex flex-column align-items-center">
+              <%= link_to troca_turma_show_path, class: 'btn btn-primary w-100' do %>
+                <i class="fa fa-info-circle fa-lg" aria-hidden="true"
+                   data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
+                Detalhes
+              <% end %>
+              <a href="#" class="btn btn-danger w-100 mt-2">
+                <i class="fa fa-ban fa-lg" aria-hidden="true"
+                   data-toggle="tooltip" data-placement="top" title="Cancelar"></i>
+                Cancelar
+              </a>
+            </div>
+          </td>
+        </tr>
       </tbody>
     </table>
   </div>

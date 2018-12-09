@@ -77,14 +77,14 @@
       </thead>
       <tbody>
       <tr>
-        <td>Estágio</td>
-        <td class="text-success">Aprovada</td>
-        <td>300</td>
-        <td>300</td>
-        <td>10/10/2016</td>
-        <td class="align-middle">
-          <div class="d-flex justify-content-around">
-            <%= link_to ac_show_path, class: 'btn btn-primary' do %>
+        <td class="align-middle">Estágio</td>
+        <td class="align-middle text-success">Aprovada</td>
+        <td class="align-middle">300</td>
+        <td class="align-middle">300</td>
+        <td class="align-middle">10/10/2016</td>
+        <td>
+          <div class="d-flex flex-column align-items-center">
+            <%= link_to ac_show_path, class: 'btn btn-primary w-90' do %>
               <i class="fa fa-info-circle fa-lg" aria-hidden="true"
                  data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
               Detalhes
@@ -93,22 +93,26 @@
         </td>
       </tr>
       <tr>
-        <td>Simpósio</td>
-        <td class="text-warning">Pendente</td>
-        <td>20</td>
-        <td>--</td>
-        <td>--</td>
-        <td class="align-middle">
-          <div class="d-flex justify-content-around">
-            <%= link_to ac_show_path, class: 'btn btn-primary' do %>
+        <td class="align-middle">Simpósio</td>
+        <td class="text-warning align-middle">Pendente</td>
+        <td class="align-middle">20</td>
+        <td class="align-middle">--</td>
+        <td class="align-middle">--</td>
+        <td>
+          <div class="d-flex flex-column align-items-center">
+            <%= link_to ac_show_path, class: 'btn btn-primary w-90' do %>
               <i class="fa fa-info-circle fa-lg" aria-hidden="true"
                  data-toggle="tooltip" data-placement="top" title="Detalhes"></i>
               Detalhes
             <% end %>
-            <a href="#" class="btn btn-info">
+            <a href="#" class="btn btn-info mt-2 w-90">
               <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"
                  data-toggle="tooltip" data-placement="top" title="Editar"></i>
               Editar
+            </a>
+            <a href="#" class="btn btn-danger mt-2 w-90">
+              <i class="fa fa-trash fa-lg" aria-hidden="true"></i>
+              Excluir
             </a>
           </div>
         </td>
